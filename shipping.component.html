@@ -1,0 +1,10 @@
+<h1>Shipping</h1>
+
+<p>
+  <a routerLink="/shipping">shipping prices</a>
+</p>
+<div class="shipping-item" *ngFor="let shipping of shippingCosts | async">
+  <span>{{ item.name }}</span>
+  <span>{{ item.price | currency }}</span>
+
+</div>
